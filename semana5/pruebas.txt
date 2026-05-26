@@ -1,0 +1,10 @@
+Pruebas de las rutas en el navegador:
+
+1. http://localhost:3000
+Al visitar esta ruta, el navegador envía una solicitud GET a la ruta raíz (/). El servidor la procesa y responde enviando el texto "Servidor activo", que es lo que se muestra en la pantalla.
+
+2. http://localhost:3000/saludo
+Al visitar esta URL, el navegador hace una petición a la ruta "/saludo". El servidor ejecuta la función correspondiente a esa ruta y devuelve el texto "Hola comunidad".
+
+3. http://localhost:3000/mensaje/juan
+Al ingresar a esta ruta, el servidor detecta que hay un parámetro dinámico en la URL (después de /mensaje/). Captura la palabra "juan", la guarda en una variable, y luego devuelve la respuesta concatenada "Hola juan". Si escribimos otra palabra, el mensaje cambiará en consecuencia.

@@ -1,0 +1,7 @@
+Explicación de la ruta POST /reporte:
+
+¿Qué hace esta ruta?
+Esta ruta está configurada para recibir peticiones HTTP con el método POST. A diferencia del método GET, POST se usa para enviar información al servidor (generalmente en el "body" o cuerpo de la petición). El código toma el contenido enviado en "req.body.mensaje", lo guarda en una variable, y luego responde enviando un objeto JSON al cliente. Este JSON confirma que el reporte fue recibido (estado: "Reporte recibido") y devuelve el mismo mensaje para validar lo que se recibió.
+
+¿Para qué podría servir en una aplicación comunitaria?
+Esta ruta sería ideal para que los miembros de la comunidad envíen información al sistema. Por ejemplo, podrían usar una app en su celular para reportar un problema de recolección de basura, un bache en la calle, o una alerta de seguridad. La aplicación enviaría los detalles del problema mediante esta ruta POST, y el servidor recibiría esos datos para almacenarlos en una base de datos centralizada, permitiendo que los líderes comunitarios o autoridades los revisen y actúen en consecuencia.
